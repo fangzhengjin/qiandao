@@ -1,5 +1,5 @@
 # 基础镜像
-FROM python:2.7-alpine
+FROM resin/raspberrypi3-alpine-python:2.7-slim
 
 # 维护者信息
 MAINTAINER fangzhengjin <fangzhengjin@gmail.com>
