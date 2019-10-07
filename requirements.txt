@@ -5,3 +5,4 @@ chardet
 requests
 pbkdf2
 pycryptodome
+pycurl

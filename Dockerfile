@@ -6,7 +6,8 @@ ADD . /usr/src/app
 WORKDIR /usr/src/app
 # 基础镜像已经包含pip组件
 RUN apk update \
-    && apk add bash autoconf g++ \
+    && apk add bash autoconf g++ curl-dev\
+    && rm -rf /var/cache/apk/* \
     && pip install --no-cache-dir -r requirements.txt
 ENV PORT 80
 EXPOSE $PORT/tcp
